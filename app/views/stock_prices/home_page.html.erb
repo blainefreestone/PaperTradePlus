@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>PaperTradePlus</h1>
+  <p>Look up stocks by their ticker.</p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Stocks</h2>
+      <p>Look up stocks by their ticker symbol.</p>
+      <p>Click on the stock to see the current price.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Popular Stocks</h2>
+      <p><%= link_to "AAPL", stock_prices_path(:search => "AAPL") %>
+      <p><%= link_to "GOOGL", stock_prices_path(:search => "GOOGL") %>
+      <p><%= link_to "AMZN", stock_prices_path(:search => "AMZN") %>
+      <p><%= link_to "MSFT", stock_prices_path(:search => "MSFT") %>
+      <p><%= link_to "TSLA", stock_prices_path(:search => "TSLA") %>
+    </div>
+  </div>
+
+  <%= form_tag(stock_prices_path, method: :get) do %>
+    <div class="search-form">
+      <%= text_field_tag :search, params[:search], placeholder: "Search stock ticker" %>
+      <%= submit_tag "Search", name: nil %>
+    </div>
+  <% end %>
+</div>
+
