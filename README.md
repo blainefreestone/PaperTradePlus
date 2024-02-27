@@ -5,7 +5,7 @@ This is a Ruby on Rails web application that interacts with a stock price API to
 To start the server run `rails server` in the command line while in the directory of the project and the web server will run on https://localhost:3000
 
 I wrote this software as the beginning of a stock option paper trading application. For now the data is about stocks but eventually I would like to move to options as well and create the logic to participate in paper trading.
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/-OQHoyx4Tac)
 
 # Web Pages
 
